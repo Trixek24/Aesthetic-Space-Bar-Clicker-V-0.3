@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicking Warriors</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="game.js"></script>
+</head>
+<body onload="ppcDefine()">
+    <div class="dropdown">
+        <button class="dropbtn"></button>
+        <div class="dropdown-content">
+            <button onclick="red();">Red</button>
+            <button onclick="yellow();">Yellow</button>
+            <button onclick="blue();">Blue</button>
+            
+        </div>
+    </div>
+    <center>
+    <h1 id="header"><b>SpaceBar Warriors</b></h1>
+    <br>
+    <br>
+    <div class="container">
+        <h1 id="score">0</h1>
+        <h3 class="pointsperclick">Points Per Click: </h3> <h3 class="pointsperclick" id="ppc">0</h3>
+        <br>
+        <br>
+        <button id="one_plus_point" onclick="plus1Point()">+1 Points Per Second $500</button>
+    </div>
+    </center>
+    
+</body>
+</html>
