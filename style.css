@@ -1,9 +1,19 @@
 body{
-    background-color: rgb(42, 42, 44);
+    background-color: grey;
     background-size: cover;
     background-repeat: no-repeat;
 
     
+}
+
+#upgrades
+{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-color:white ;
+    border-width:4px;
+    border-radius: 15px;
+    border-style:double;
+    height: 300px;
 }
 
 #header{
@@ -21,6 +31,14 @@ body{
     background-color: white;
     border-radius: 20px;
     border-width: 5px;
+
+}
+.pointbtn
+{
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-color: white;
+    border-width: 4px;
 
 }
 
@@ -73,5 +91,20 @@ body{
 {
     background-color: black;
     color: white;
+
+}
+
+#sound_btn
+{
+    
+    position: fixed;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    background-image: url(audio-on.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
 }

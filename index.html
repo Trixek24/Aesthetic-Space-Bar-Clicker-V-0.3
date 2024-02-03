@@ -4,30 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clicking Warriors</title>
+    <title>SpaceBar Warriors</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="game.js"></script>
 </head>
 <body onload="ppcDefine()">
     <div class="dropdown">
-        <button class="dropbtn"></button>
+     <button class="dropbtn"></button>
         <div class="dropdown-content">
             <button onclick="red();">Red</button>
             <button onclick="yellow();">Yellow</button>
             <button onclick="blue();">Blue</button>
+            <button onclick="orange();">Orange</button>
+            <button onclick="green();">Green</button>
+            <button onclick="pink();">Pink</button>
+            <button onclick="purple();">Purple</button>
+            <button onclick="black();">Black</button>
+            <button onclick="Default();">Default</button>
             
         </div>
     </div>
+    <button id="sound_btn" onclick="audio()"></button>
     <center>
     <h1 id="header"><b>SpaceBar Warriors</b></h1>
     <br>
     <br>
     <div class="container">
-        <h1 id="score">0</h1>
+        <h1 id="score">$0</h1>
         <h3 class="pointsperclick">Points Per Click: </h3> <h3 class="pointsperclick" id="ppc">0</h3>
         <br>
         <br>
-        <button id="one_plus_point" onclick="plus1Point()">+1 Points Per Second $500</button>
+        <div id="upgrades">
+            <h1 style="color: white;">Upgrades</h1>
+            <button class="pointbtn" onclick="plus1Point()">+1 Points Per Second - $250</button>
+            <br>
+            <button class="pointbtn" onclick="plus2Point()">+2 Points Per Second - $500</button>
+            <br>
+            <button class="pointbtn" onclick="plus5Point()">+5 Points Per Second - $1000</button>
+        </div>
     </div>
     </center>
     
