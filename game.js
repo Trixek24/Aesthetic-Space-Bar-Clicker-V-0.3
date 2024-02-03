@@ -92,6 +92,23 @@ function plus5Point()
     }
 
 }
+function plus10Point()
+{
+    if(score >= 2000)
+    {
+        ppc = ppc + 10;
+        document.getElementById("ppc").innerHTML = ppc;
+        console.log("Points Per Second is "+ ppc);
+        score = score - 2000;
+        return;
+    }
+    else
+    {
+        console.log("Score Requirement not reached")
+        return;
+    }
+
+}
 //color changing//
 function red()
 {
